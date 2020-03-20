@@ -28,7 +28,7 @@ const mapStateToProps = state => {
   };
 };
 
-//passed mapStateToProps into connect function
+//passes mapStateToProps into connect function
 //tells which state to pass to components
 export default connect(
   mapStateToProps,
