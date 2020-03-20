@@ -5,7 +5,7 @@ import {fetchSmurf} from '../actions/SmurfActions';
 import SmurfForm from './SmurfForm';
 import Smurf from './Smurf';
 //uses fetchSmurf to grab the smurfs
-const App= ({fetchSmurf})=> {
+const App= ({fetchSmurf}) => {
 
   useEffect(() => {
       fetchSmurf();
@@ -26,11 +26,10 @@ const mapStateToProps = state => {
     message: state.message,
     smurfs: state.smurfs
   };
-};
-
+}
 //passes mapStateToProps into connect function
 //tells which state to pass to components
 export default connect(
   mapStateToProps,
-  {fetchSmurf}
+  { fetchSmurf }
 )(App);
