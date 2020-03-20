@@ -10,7 +10,7 @@ const Smurf = props => {
           <div key={item.id}>
             <p>Name: {`${item.name} Smurf`}</p>
             <p>Age: {item.age}</p>
-            <p>Height: {item.height}</p>
+            <p className='height-border'>Height: {item.height}</p>
           </div>
         );
       })}

@@ -20,7 +20,7 @@ const App= ({fetchSmurf}) => {
       </div>
     );
 };
-//takes propertes from state to map to the props of the components
+//takes properties from state to map to the props of the components
 const mapStateToProps = state => {
   return {
     message: state.message,
